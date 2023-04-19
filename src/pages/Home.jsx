@@ -78,7 +78,7 @@ const Home = () => {
 
      </div>
 
-     <div className='md:px-32 md:pb-5  '>
+     <div className='md:px-32 md:pb-5 pb-5   '>
      <FooterCentered links={links} />
      </div>
 

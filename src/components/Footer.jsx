@@ -49,6 +49,7 @@ export function FooterCentered({ links }) {
   return (
     <div className={classes.footer}>
       <div className={classes.inner}>
+
         <MantineLogo size={28} />
 
         <Group className={classes.links}>{items}</Group>

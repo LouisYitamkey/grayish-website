@@ -94,7 +94,7 @@ import {
     return (
       <Container size="lg" py="xl">
         <Group position="center">
-          <Badge variant="filled" size="lg">
+          <Badge  size="lg">
             Best company ever
           </Badge>
         </Group>
@@ -102,8 +102,9 @@ import {
         <Title order={2} className={classes.title} ta="center" mt="sm">
           Purchase home appliances at affordable prices
         </Title>
+        
   
-        <Text c="dimmed" size="xl"  className={classes.description} ta="center" mt="md">
+        <Text c="dimmed" size="md"  className={classes.description} ta="center" mt="md">
         Dont miss out on our amazing deals for purchasing high-quality home appliances at affordable prices
         </Text>
   
