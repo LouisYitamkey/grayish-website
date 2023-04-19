@@ -68,7 +68,7 @@ const Home = () => {
 
       
 
-      <div className='py-24 bg-white'>
+      <div className=' md:pt-24 bg-white'>
      <FaqWithImage/>
      </div>
       
