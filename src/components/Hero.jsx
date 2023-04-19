@@ -1,4 +1,5 @@
 import { createStyles, Overlay, Container, Title, Button, Text, rem } from '@mantine/core';
+import { FiArrowRight } from "react-icons/fi";
 
 const useStyles = createStyles((theme) => ({
   hero: {
@@ -84,7 +85,7 @@ export function HeroContentLeft() {
         radius="xl"
          className={`${classes.control} text-white bg-blue-500`}
 >
-  Contact Us
+  Contact Us &nbsp; <FiArrowRight/>
 </Button>
 
       </Container>

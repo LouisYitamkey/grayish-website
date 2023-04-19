@@ -31,7 +31,7 @@ export function FaqWithImage() {
       <Container size="lg">
         <Grid id="faq-grid" gutter={50}>
           <Col span={12} md={6}>
-            <Image src={FaqImage} alt="Frequently Asked Questions" />
+            <Image className=' md:pt-12' src={FaqImage} alt="Frequently Asked Questions" />
           </Col>
           <Col span={12} md={6}>
             <Title order={2} ta="left" className={classes.title}>

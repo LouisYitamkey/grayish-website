@@ -44,7 +44,7 @@ const Home = () => {
 
     
 
-     <div className='flex-row md:flex space-y-14  bg-slate-50 md:space-y-0 pb-24  md:space-x-16 md:px-48 pt-24 px-5   md:pt-20 justify-between'>
+     <div className='flex-row md:flex space-y-14  bg-slate-100 md:space-y-0 pb-24  md:space-x-16 md:px-48 pt-24 px-5   md:pt-20 justify-between'>
 
         <div>
         <Cooker/>
@@ -54,7 +54,7 @@ const Home = () => {
         </div>
       
       </div>
-      <div className='flex-row md:flex space-y-14  bg-slate-50 md:space-y-0 pb-24  md:space-x-16 md:px-48 pt-24 px-5  justify-between'>
+      <div className='flex-row md:flex space-y-14  bg-slate-100 md:space-y-0 pb-24  md:space-x-16 md:px-48 pt-24 px-5  justify-between'>
 
        <div>
        <Blender/>
@@ -68,7 +68,7 @@ const Home = () => {
 
       
 
-      <div className='py-24'>
+      <div className='py-24 bg-white'>
      <FaqWithImage/>
      </div>
       
