@@ -38,13 +38,13 @@ const Home = () => {
 
      <HeroContentLeft />
 
-     <div className='py-24'>
+     <div className=' py-6 md:py-24'>
      <FeaturesCards />
      </div>
 
     
 
-     <div className='flex-row md:flex space-y-14  bg-slate-100 md:space-y-0 pb-24  md:space-x-16 md:px-48 pt-24 px-5   md:pt-20 justify-between'>
+     <div className='flex-row md:flex space-y-14 bg-slate-50  md:bg-slate-100  md:space-y-0 pb-24  md:space-x-16 md:px-48 pt-24 px-5   md:pt-20 justify-between'>
 
         <div>
         <Cooker/>
@@ -54,7 +54,7 @@ const Home = () => {
         </div>
       
       </div>
-      <div className='flex-row md:flex space-y-14  bg-slate-100 md:space-y-0 pb-24  md:space-x-16 md:px-48 pt-24 px-5  justify-between'>
+      <div className='flex-row md:flex space-y-14   bg-slate-50 md:bg-slate-100 md:space-y-0 md:pb-24 pb-24  md:space-x-16 md:px-48 md:pt-24 px-5  justify-between'>
 
        <div>
        <Blender/>
@@ -68,12 +68,12 @@ const Home = () => {
 
       
 
-      <div className=' md:pt-24 bg-white'>
+      <div className=' pt-8 md:pt-24 bg-white'>
      <FaqWithImage/>
      </div>
       
     
-     <div className='md:px-32 md:pt-28'>
+     <div className='md:px-32 pt-8  md:pt-28'>
      <ContactUs />
 
      </div>

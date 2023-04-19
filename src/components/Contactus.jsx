@@ -78,7 +78,7 @@ import {
     ));
   
     return (
-      <div className={`${classes.wrapper} bg-slate-100 `} >
+      <div className={`${classes.wrapper} bg-slate-50 md:bg-slate-100 `} >
         <SimpleGrid cols={2} spacing={50} breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
           <div>
             <Title  className={`${classes.title} md:pt-12 `} >Contact us</Title>

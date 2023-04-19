@@ -107,7 +107,7 @@ import {
         Dont miss out on our amazing deals for purchasing high-quality home appliances at affordable prices
         </Text>
   
-        <SimpleGrid cols={3} spacing="xl" mt={50} breakpoints={[{ maxWidth: 'md', cols: 1 }]}>
+        <SimpleGrid  cols={3} spacing="xl" mt={50} breakpoints={[{ maxWidth: 'md', cols: 1 }]}>
           {features}
         </SimpleGrid>
       </Container>
