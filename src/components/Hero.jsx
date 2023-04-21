@@ -16,7 +16,7 @@ const useStyles = createStyles((theme) => ({
     flexDirection: 'column',
     justifyContent: 'flex-end',
     alignItems: 'flex-start',
-    paddingBottom: `calc(${theme.spacing.xl} * 6)`,
+    paddingBottom: `calc(${theme.spacing.xl} * 7)`,
     zIndex: 1,
     position: 'relative',
 
