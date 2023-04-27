@@ -106,7 +106,7 @@ import {
             />
             <TextInput
               label="Name"
-              placeholder="John Doe"
+              placeholder="John Doee"
               mt="md"
               classNames={{ input: classes.input, label: classes.inputLabel }}
             />
