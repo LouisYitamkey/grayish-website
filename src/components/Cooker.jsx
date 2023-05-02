@@ -87,7 +87,7 @@ export function Cooker() {
       </Group>
 
       <Text fz="sm" c="dimmed" mt="sm">
-      Upgrade your home and simplify your life with our high-quality home appliances. 
+      Upgrade your homee and simplify your life with our high-quality home appliances. 
       </Text>
 
       <Group position="apart" mt="md">
