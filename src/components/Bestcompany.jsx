@@ -32,7 +32,45 @@ import {
     },
   ];
   
+
+  export function FeaturesCards() {
+    const { classes, theme } = useStyles();
+    const features = mockdata.map((feature) => (
+      <Card key={feature.title} shadow="md" radius="md" className={classes.card} padding="xl">
+        <feature.icon size={rem(50)} stroke={2} color={theme.fn.primaryColor()} />
+        <Text fz="lg" fw={500} className={classes.cardTitle} mt="md">
+          {feature.title}
+        </Text>
+        <Text fz="sm" c="dimmed" mt="sm">
+          {feature.description}
+        </Text>
+      </Card>
+    ));
   
+    return (
+      <Container size="lg" py="xl">
+        <Group position="center">
+          <Badge  size="lg">
+            Best company ever
+          </Badge>
+        </Group>
+  
+        <Title order={2} className={classes.title} ta="center" mt="sm">
+          Purchase home appliances at affordable prices
+        </Title>
+        
+  
+        <Text c="dimmed" size="md"  className={classes.description} ta="center" mt="md">
+        Dont miss out on our amazing deals for purchasing high-quality home appliances at affordable prices
+        </Text>
+  
+        <SimpleGrid  cols={3} spacing="xl" mt={50} breakpoints={[{ maxWidth: 'md', cols: 1 }]}>
+          {features}
+        </SimpleGrid>
+      </Container>
+    );
+  }
+
   const useStyles = createStyles((theme) => ({
     title: {
       fontSize: rem(34),
@@ -77,44 +115,6 @@ import {
     },
   }));
   
-  export function FeaturesCards() {
-    const { classes, theme } = useStyles();
-    const features = mockdata.map((feature) => (
-      <Card key={feature.title} shadow="md" radius="md" className={classes.card} padding="xl">
-        <feature.icon size={rem(50)} stroke={2} color={theme.fn.primaryColor()} />
-        <Text fz="lg" fw={500} className={classes.cardTitle} mt="md">
-          {feature.title}
-        </Text>
-        <Text fz="sm" c="dimmed" mt="sm">
-          {feature.description}
-        </Text>
-      </Card>
-    ));
-  
-    return (
-      <Container size="lg" py="xl">
-        <Group position="center">
-          <Badge  size="lg">
-            Best company ever
-          </Badge>
-        </Group>
-  
-        <Title order={2} className={classes.title} ta="center" mt="sm">
-          Purchase home appliances at affordable prices
-        </Title>
-        
-  
-        <Text c="dimmed" size="md"  className={classes.description} ta="center" mt="md">
-        Dont miss out on our amazing deals for purchasing high-quality home appliances at affordable prices
-        </Text>
-  
-        <SimpleGrid  cols={3} spacing="xl" mt={50} breakpoints={[{ maxWidth: 'md', cols: 1 }]}>
-          {features}
-        </SimpleGrid>
-      </Container>
-    );
-  }
-
 
 
 

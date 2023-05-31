@@ -1,6 +1,37 @@
 import { createStyles, Overlay, Container, Title, Button, Text, rem } from '@mantine/core';
 import { FiArrowRight } from "react-icons/fi";
 
+export function HeroContentLeft() {
+  const { classes } = useStyles();
+
+  return (
+    <div className={classes.hero}>
+      <Overlay
+        gradient="linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, .65) 40%)"
+        opacity={1}
+        zIndex={0}
+      />
+      <Container className={classes.container}>
+      <Title className={classes.title}> <span className='md:hidden'> Upgrade with </span>Quality Home Appliances <br className='hidden md:block'/> at Affordable Prices </Title>
+      <Text  className={classes.description} size="xl" mt="xl">
+        Our products are sourced from reputable manufacturers and are built to last, ensuring that you get the most value for your money
+   
+        </Text>
+
+        <Button
+        variant="gradient"
+        size="lg"
+        radius="xl"
+         className={`${classes.control} text-white bg-blue-500`}
+>
+  Contact Us &nbsp; <FiArrowRight/>
+</Button>
+
+      </Container>
+    </div>
+  );
+}
+
 const useStyles = createStyles((theme) => ({
   hero: {
     position: 'relative',
@@ -61,34 +92,3 @@ const useStyles = createStyles((theme) => ({
     },
   },
 }));
-
-export function HeroContentLeft() {
-  const { classes } = useStyles();
-
-  return (
-    <div className={classes.hero}>
-      <Overlay
-        gradient="linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, .65) 40%)"
-        opacity={1}
-        zIndex={0}
-      />
-      <Container className={classes.container}>
-      <Title className={classes.title}> <span className='md:hidden'> Upgrade with </span>Quality Home Appliances <br className='hidden md:block'/> at Affordable Prices </Title>
-      <Text  className={classes.description} size="xl" mt="xl">
-        Our products are sourced from reputable manufacturers and are built to last, ensuring that you get the most value for your money
-   
-        </Text>
-
-        <Button
-        variant="gradient"
-        size="lg"
-        radius="xl"
-         className={`${classes.control} text-white bg-blue-500`}
->
-  Contact Us &nbsp; <FiArrowRight/>
-</Button>
-
-      </Container>
-    </div>
-  );
-}

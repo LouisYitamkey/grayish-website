@@ -1,28 +1,8 @@
 import { createStyles, Image, Accordion, Grid, Col, Container, Title } from '@mantine/core';
-
 import FaqImage from '../images/imagefaq.png'
 
-const useStyles = createStyles((theme) => ({
-  wrapper: {
-    paddingTop: `calc(${theme.spacing.xl} * 2)`,
-    paddingBottom: `calc(${theme.spacing.xl} * 2)`,
-  },
 
-  title: {
-    marginBottom: theme.spacing.md,
-    paddingLeft: theme.spacing.md,
-    color: theme.colorScheme === 'dark' ? theme.white : theme.black,
-    fontFamily: `Greycliff CF, ${theme.fontFamily}`,
-  },
-
-  item: {
-    fontSize: theme.fontSizes.sm,
-    color: theme.colorScheme === 'dark' ? theme.colors.dark[1] : theme.colors.gray[7],
-  },
-}));
-
-const placeholder =
-  'It can’t help but hear a pin drop from over half a mile away, so it lives deep in the mountains where there aren’t many people or Pokémon.';
+const placeholder = 'It can’t help but hear a pin drop from over half a mile away, so it lives deep in the mountains where there aren’t many people or Pokémon.';
 
 export function FaqWithImage() {
   const { classes } = useStyles();
@@ -72,3 +52,23 @@ export function FaqWithImage() {
     </div>
   );
 }
+
+
+const useStyles = createStyles((theme) => ({
+  wrapper: {
+    paddingTop: `calc(${theme.spacing.xl} * 2)`,
+    paddingBottom: `calc(${theme.spacing.xl} * 2)`,
+  },
+
+  title: {
+    marginBottom: theme.spacing.md,
+    paddingLeft: theme.spacing.md,
+    color: theme.colorScheme === 'dark' ? theme.white : theme.black,
+    fontFamily: `Greycliff CF, ${theme.fontFamily}`,
+  },
+
+  item: {
+    fontSize: theme.fontSizes.sm,
+    color: theme.colorScheme === 'dark' ? theme.colors.dark[1] : theme.colors.gray[7],
+  },
+}));

@@ -26,36 +26,27 @@ const linksHeader = [
 ];
 
 
-
-
 const Home = () => {
   return (
     <>
     <div>
     <HeaderResponsive links={linksHeader} />
     </div>
-
-
      <HeroContentLeft />
-
      <div className=' py-6 md:py-24'>
      <FeaturesCards />
      </div>
 
-    
-
      <div className='flex-row md:flex space-y-14 bg-slate-50  md:bg-slate-50  md:space-y-0 pb-24  md:space-x-16 md:px-48 pt-24 px-5   md:pt-20 justify-between'>
-
         <div>
         <Cooker/>
         </div>
         <div>
         <CarouselCard/>
-        </div>
-      
+        </div> 
       </div>
-      <div className='flex-row md:flex space-y-14   bg-slate-50 md:bg-slate-50 md:space-y-0 md:pb-24 pb-24  md:space-x-16 md:px-48 md:pt-24 px-5  justify-between'>
 
+      <div className='flex-row md:flex space-y-14   bg-slate-50 md:bg-slate-50 md:space-y-0 md:pb-24 pb-24  md:space-x-16 md:px-48 md:pt-24 px-5  justify-between'>
        <div>
        <Blender/>
      </div>
@@ -66,8 +57,6 @@ const Home = () => {
 
      </div>
 
-      
-
       <div className=' pt-8 md:pt-24 bg-white'>
      <FaqWithImage/>
      </div>
@@ -75,7 +64,6 @@ const Home = () => {
     
      <div className='md:px-32 pt-8  md:pt-28'>
      <ContactUs />
-
      </div>
 
      <div className='md:px-32 md:pb-5 pb-5   '>
